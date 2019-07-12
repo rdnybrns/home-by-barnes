@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap');
+
+@media only screen and (max-width: 479px) {
+  header {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  header picture {
+    align-self: center;
+  }
+
+  body header h1 {
+    order: 1;
+    align-self: flex-start;
+  }
+
+  .list-of-things {
+    flex-direction: column;
+  }
+
+  .item {
+    align-self: center;
+    margin-top: 10px;
+  }
+}
+
+* {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  align-self: flex-end;
+  margin: 0;
+  font-size: calc(12px + 2vw);
+}
+
+main h2 {
+  font-size: calc(12px + 1.5vw);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-of-things {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.item:hover {
+  opacity: 0.5;
+}
+
+.item h3 {
+  align-self: center;
+  font-weight: 400;
+  font-size: calc(12px + 1.5vw);
+}
+
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  align-self: flex-end;
+  font-size: calc(12px + 0.5vw);
+}
+
+.seafoam {
+  background-color: rgb(140, 190, 178);
+}
+
+.deep-coral {
+  background-color: rgb(240, 96, 96);
+}
