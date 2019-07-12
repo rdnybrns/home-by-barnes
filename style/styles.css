@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap');
 
 @media only screen and (max-width: 479px) {
-  body {
-    width: 100vw !important;
-  }
-
   header {
-    margin-top: 10px;
     flex-direction: column;
   }
 
@@ -29,6 +24,12 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100vw !important;
+  }
+}
+
 * {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
@@ -38,7 +39,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 75vw;
-  margin: 0 auto;
+  margin: 10px auto;
+  padding: 0 10px;
 }
 
 header {
@@ -101,7 +103,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 10px;
 }
 
 footer p {
