@@ -54,12 +54,24 @@ main h2 {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .list-of-things {
   display: flex;
   justify-content: space-around;
+}
+
+.list-of-things a {
+  color: white;
+}
+
+.list-of-things a:hover {
+  text-decoration: none;
 }
 
 .item {
@@ -83,12 +95,15 @@ a {
 footer {
   height: 20vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10px;
 }
 
 footer p {
-  align-self: flex-end;
+  align-self: center;
   font-size: calc(12px + 0.5vw);
+  margin: 0;
 }
 
 .seafoam {
